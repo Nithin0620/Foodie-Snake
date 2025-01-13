@@ -8,14 +8,11 @@ let speed = 5;
 let score = 0;
 let lastPaintTime = 0;
 
-
 let snakeArr = [
     { x: 13, y: 15 }
 ]
 
 let food = { x: 10, y: 7 };
-
-
 
 //Game Functions 
 function main(ctime) {
@@ -44,7 +41,6 @@ function isCollide(sarr) {
     if(snakeArr[0].x>=18 || snakeArr[0].x<=0 || snakeArr[0].y>=18 || snakeArr[0].y<=0){
         return true;
     }
-
     
     return false;
 }
@@ -52,7 +48,6 @@ function isCollide(sarr) {
 function gameEngine() {
     musicSound.play();
     localStorage.clear();
-
 
     // Part 1 :updating the snake array & food;
     if (isCollide(snakeArr)) {
@@ -64,7 +59,6 @@ function gameEngine() {
         score = 0;
 
     }
-
 
     // IF you have eaten the food regenerate the food and update the score
     if(snakeArr[0].y === food.y && snakeArr[0].x === food.x){
@@ -85,9 +79,7 @@ function gameEngine() {
         food = { x: 2 + Math.round((16 - 2) * Math.random()), y: 2 + Math.round((16 - 2) * Math.random()) }; // Randomize food position
     }
 
-
-    //IF you have eatten the food regenerate the fod and uodate the score
-    
+    //IF you have eatten the food regenerate the fod and uodate the score 
 
     //Moving the snake
     for( let i= snakeArr.length - 2;i>=0;i--){
@@ -98,10 +90,6 @@ function gameEngine() {
 
     snakeArr[0].x += inputDir.x;
     snakeArr[0].y += inputDir.y;
-
-
-
-
 
     // part 2 : Display the snake and food;
 
@@ -122,9 +110,6 @@ function gameEngine() {
         board.appendChild(snakeElement);
     })
 
-
-
-
     //Display the food
     foodElement = document.createElement('div');
     foodElement.style.gridRowStart = food.y;
@@ -133,17 +118,7 @@ function gameEngine() {
 
     board.appendChild(foodElement);
 
-
-
 }
-
-
-
-
-
-
-
-
 
 //Main logic starts here
 let highscore= localStorage.getItem("highscore");
@@ -185,8 +160,6 @@ window.addEventListener('keydown', e => {
             inputDir.y = 0;
             break;
         default:
-
-
 
     }
 })
