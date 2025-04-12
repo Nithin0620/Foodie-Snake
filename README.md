@@ -20,9 +20,9 @@ A classic browser-based Snake game with a modern twist! Built using **HTML**, **
 
 ## 🖼️ Screenshots
 
-![Screenshot 2024-11-21 172125](https://github.com/user-attachments/assets/85c0bbda-4725-49b8-a98f-1aabc0205b4c)
-![Screenshot 2024-11-21 172141](https://github.com/user-attachments/assets/c66a5ca2-21e1-4722-b577-7b87c8e3b7ba)
-![Screenshot 2024-11-21 163600](https://github.com/user-attachments/assets/d703f627-e95a-42ce-8b7a-be88d9347c85)
+![image](https://github.com/user-attachments/assets/e170e025-9c33-43eb-afc0-4a24956c0c28)
+
+![image](https://github.com/user-attachments/assets/7602e2ab-0850-4022-9c6e-d6aa99316e4a)
 
 
 
