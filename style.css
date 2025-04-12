@@ -7,13 +7,17 @@
 }
 
 body{
-    background:url(images/bg.jpg);
+    /* background: radial-gradient(circle at 50% 50%, 
+    #408EC6 0%, 
+    #1E2761 100%); */
+    background-image: url("/images/Screenshot\ 2025-04-12\ 183337.png");
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: antiquewhite;
 
 }
 
@@ -46,7 +50,7 @@ body{
 
 #scoreBox{
     position: absolute;
-    top: 9px;
+    top: 23px;
     right: 200px;
     font-family: 'New Tegomin', serif;
     font-size: 40px;
@@ -54,7 +58,8 @@ body{
 }
 
 #board{
-    background: linear-gradient(rgb(202, 255, 202),rgb(255, 255, 150));
+    background: #ffa200;
+background: linear-gradient(14deg,rgba(255, 162, 0, 1) 0%, rgba(255, 228, 130, 1) 59%);
     width: 90vmin;
     border: 2px solid black;
     height: 90vmin;
@@ -64,22 +69,22 @@ body{
 }
 
 .snake {
-    background-color: purple !important;
-    border: .25vmin solid white;
-    border-radius: 12px;
+    background: linear-gradient(179deg,rgba(0, 133, 145, 1) 0%, rgba(3, 49, 51, 0.97) 99%);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 45%;
 }
 
 .head {
-    background-color: red !important;
-    border: 2px solid rgb(33, 0, 33);
-    background: linear-gradient(rgb(244, 190, 190),rgb(246, 246, 168));
+    background-color: #00555A !important;
+    border: 2px solid rgb(0, 0, 0);
+    background: linear-gradient(179deg,rgb(158, 215, 215) 0%, rgba(0, 85, 90, 0.97) 99%);
     transform: scale(1.03);
-    border-radius: 8px;
+    border-radius: 45%;
 }
 
 
 .food{
-    background: linear-gradient(red,purple);
+    background: radial-gradient(circle,rgba(110, 55, 21, 1) 0%, rgba(79, 58, 39, 1) 100%);
     border: .25vmin solid black;
-    border-radius: 15px;
+    border-radius: 45%;
 }
